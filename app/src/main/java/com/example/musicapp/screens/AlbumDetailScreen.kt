@@ -11,6 +11,7 @@ import androidx.compose.material.icons.filled.ArrowBack
 import androidx.compose.material.icons.filled.FavoriteBorder
 import androidx.compose.material.icons.filled.MoreVert
 import androidx.compose.material.icons.filled.PlayArrow
+import androidx.compose.material.icons.filled.Shuffle
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
@@ -64,7 +65,7 @@ fun AlbumDetailScreen(navController: NavController, id: String) {
 
     val currentAlbum = album ?: return
 
-    val dummyTracks = (1..5).map { "Track $it" }
+    val dummyTracks = (1..10).map { "Track $it" }
 
     Box(
         modifier = Modifier
@@ -98,9 +99,8 @@ fun AlbumDetailScreen(navController: NavController, id: String) {
                         modifier = Modifier
                             .matchParentSize()
                             .background(
-                                Brush.verticalGradient(
-                                    listOf(Color.Transparent, Color(0x66000000))
-                                )
+                                Brush.verticalGradient(listOf(Color.Transparent, Color(0xFF734CE7)))
+
                             )
                     )
 
@@ -174,6 +174,10 @@ fun AlbumDetailScreen(navController: NavController, id: String) {
                                     tint = Color.White,
                                     modifier = Modifier.size(30.dp)
                                 )
+                                Icon(imageVector = Icons.Filled.Shuffle,
+                                    contentDescription = "Shuffle",
+                                    tint = Color.White)
+
                             }
                         }
                     }
