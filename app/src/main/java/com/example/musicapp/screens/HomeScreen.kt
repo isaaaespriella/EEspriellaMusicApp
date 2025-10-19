@@ -163,11 +163,9 @@ fun HomeScreen(navController: NavController) {
                     }
                 }
 
-                Box(
-                    modifier = Modifier
-                        .padding( start = 15.dp, end = 30.dp)
-                        .align(Alignment.BottomCenter)
-                ) {
+                Box(modifier = Modifier
+                    .align(Alignment.BottomCenter)
+                    .padding(start = 30.dp, end = 28.dp),) {
                     MiniPlayer(firstAlbum)
                 }
             }

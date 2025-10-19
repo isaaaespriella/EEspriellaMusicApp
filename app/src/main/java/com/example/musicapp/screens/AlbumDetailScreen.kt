@@ -212,12 +212,12 @@ fun AlbumDetailScreen(navController: NavController, id: String) {
             items(dummyTracks) { track ->
                 Row(
                     modifier = Modifier
+                        .padding(start = 15.dp, end = 15.dp)
+                        .padding(horizontal = 16.dp, vertical = 3.dp)
                         .fillMaxWidth()
-                        .padding(horizontal = 16.dp, vertical = 8.dp)
                         .clip(RoundedCornerShape(12.dp))
                         .background(Color.White)
-                        .padding(12.dp)
-                        .padding(start = 15.dp, end = 30.dp),
+                        .padding(12.dp),
                     verticalAlignment = Alignment.CenterVertically,
                     horizontalArrangement = Arrangement.SpaceBetween
                 ) {
@@ -245,7 +245,7 @@ fun AlbumDetailScreen(navController: NavController, id: String) {
                         }
                     }
 
-                    IconButton(onClick = { /* aquí puedes poner menú o acción futura */ }) {
+                    IconButton(onClick = {  }) {
                         Icon(
                             imageVector = Icons.Default.MoreVert,
                             contentDescription = "Options",
@@ -265,7 +265,7 @@ fun AlbumDetailScreen(navController: NavController, id: String) {
 
         Box(modifier = Modifier
             .align(Alignment.BottomCenter)
-            .padding(start = 15.dp, end = 30.dp),) {
+            .padding(start = 30.dp, end = 28.dp),) {
             MiniPlayer(currentAlbum)
         }
     }
