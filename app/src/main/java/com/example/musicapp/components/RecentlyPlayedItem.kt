@@ -26,6 +26,7 @@ fun RecentlyPlayedItem(album: Album, onClick: () -> Unit) {
     Row(
         modifier = Modifier
             .fillMaxWidth()
+            .padding(start = 30.dp, end = 30.dp)
             .padding(vertical = 6.dp)
             .clip(RoundedCornerShape(16.dp))
             .background(Color.White)
@@ -49,11 +50,10 @@ fun RecentlyPlayedItem(album: Album, onClick: () -> Unit) {
         ) {
             Text(
                 text = album.title,
-                style = MaterialTheme.typography.bodyLarge.copy(
-                    fontWeight = FontWeight.Bold,
-                    color = Color.Black
+                fontWeight = FontWeight.Bold,
+                color = Color.Black
                 )
-            )
+
             Text(
                 text = "${album.artist} • Popular Song",
                 style = MaterialTheme.typography.bodyMedium.copy(
