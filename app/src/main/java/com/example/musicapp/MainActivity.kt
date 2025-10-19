@@ -42,7 +42,7 @@ class MainActivity : ComponentActivity() {
                         }
                         composable<AlbumDetailScreenRoute> { backStack ->
                             val args = backStack.toRoute<AlbumDetailScreenRoute>()
-                            AlbumDetailScreen(args.id)
+                            AlbumDetailScreen(navController, args.id)
                         }
                     }
                 }
