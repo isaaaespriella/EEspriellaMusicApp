@@ -53,8 +53,8 @@ val poppinsTypo = Typography(
     ),
     titleLarge = TextStyle(
         fontWeight = FontWeight.Bold,
-        fontSize = 22.sp,
-        lineHeight = 28.sp
+        fontSize = 28.sp,
+        lineHeight = 32.sp
     ),
     titleMedium = TextStyle(
         fontWeight = FontWeight.Normal,
@@ -72,13 +72,13 @@ val poppinsTypo = Typography(
 
     ),
     bodyLarge = TextStyle(
-        fontWeight = FontWeight.Normal,
+        fontWeight = FontWeight.Bold,
         fontFamily = poppinsFontFamily,
         fontSize = 16.sp,
-        lineHeight = 24.sp
+        lineHeight = 1.sp
     ),
     bodyMedium = TextStyle(
-        fontWeight = FontWeight.Normal,
+        fontWeight = FontWeight.ExtraBold,
         fontFamily = poppinsFontFamily,
         fontSize = 14.sp,
         lineHeight = 20.sp
@@ -92,7 +92,7 @@ val poppinsTypo = Typography(
     labelLarge = TextStyle(
         fontWeight = FontWeight.W700,
         fontFamily = poppinsFontFamily,
-        fontSize = 14.sp,
+        fontSize = 20.sp,
         lineHeight = 20.sp,
         letterSpacing = 0.1.sp
     ),
